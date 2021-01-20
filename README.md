@@ -8,9 +8,9 @@ This repo is code samples used in the video series. Link of the Playlist:
 
 Follow Vilva for more awesome content: 
 
-[Linkedin](https://www.linkedin.com/in/vilvaathiban/)
-[Twitter](https://twitter.com/vilvaathibanpb)
-[Youtube](https://www.youtube.com/channel/UCFSQ3m4-hJ0izfsMUrAk7mw)
-[Instagram](http://instagram.com/js_jockey)
-[Discord](https://discord.gg/BZDteXuXKN)
-[Medium](https://medium.com/@vilvaathiban)
+* [Linkedin](https://www.linkedin.com/in/vilvaathiban/)
+* [Twitter](https://twitter.com/vilvaathibanpb)
+* [Youtube](https://www.youtube.com/channel/UCFSQ3m4-hJ0izfsMUrAk7mw)
+* [Instagram](http://instagram.com/js_jockey)
+* [Discord](https://discord.gg/BZDteXuXKN)
+* [Medium](https://medium.com/@vilvaathiban)
