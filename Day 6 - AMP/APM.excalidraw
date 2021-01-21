@@ -1,0 +1,37 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "http://localhost:52060",
+  "elements": [
+    {
+      "id": "g6VbEod57BKLDm_GHc7uE",
+      "type": "text",
+      "x": 503.5,
+      "y": 304.5,
+      "width": 526,
+      "height": 41,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "seed": 1388114000,
+      "version": 85,
+      "versionNonce": 1951411792,
+      "isDeleted": false,
+      "text": "AMP - Accelerated Mobile Pages",
+      "fontSize": 36,
+      "fontFamily": 2,
+      "textAlign": "left",
+      "baseline": 33
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff",
+    "gridSize": null
+  }
+}
