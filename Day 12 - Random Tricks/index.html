@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <meta property="og:video" content="https://youtu.be/I5PtXNS_EoE" />
+    <meta property="og:video:type" content="video/mp4" />
+    <meta name="theme-color" content="#12232E" />
+    <script>
+        function togglePictureInPicture() {
+            if (document.pictureInPictureElement) {
+                document.exitPictureInPicture();
+            } else {
+                if (document.pictureInPictureEnabled) {
+                    video.requestPictureInPicture();
+                }
+            }
+        }
+    </script>
+</head>
+
+<body style="text-align: center;">
+
+    <h1>Welcome to PathToExpert Video Series</h1>
+    <h1>Call tricks</h1>
+    <div>
+        <a href="tel:+919566412085">Call Vilva: +91 9512345678</a>
+    </div>
+    <h1>Video tricks</h1>
+    <div>
+        <video id="video" controls src="./AMP.mp4" height="300" width="500"></video>
+    </div>
+    <br />
+    <button id="pipButton" onclick="togglePictureInPicture();" class="btn btn-lg btn-primary hidden">Toggle Picture-in-Picture mode</button>
+</body>
+
+</html>
