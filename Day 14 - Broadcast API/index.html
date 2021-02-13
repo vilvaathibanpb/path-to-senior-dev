@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <script>
+        const bc = new BroadcastChannel('channel1')
+
+        function pm() {
+            bc.postMessage("The app is open on other tab")
+        }
+
+        bc.onmessage = function (ev) {
+            alert(ev.data)
+        }
+    </script>
+</head>
+
+<body
+    style="text-align: center; display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100vh;">
+
+    <h1>Welcome to PathToExpert Video Series</h1>
+    <h1>Day 14 - Browser API - BroadcastChannel API</h1>
+
+    <button id="pipButton" onclick="pm();" class="btn btn-lg btn-primary hidden">
+        Alert other screens
+    </button>
+</body>
+
+</html>

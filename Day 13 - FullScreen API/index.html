@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <script>
+        function toggleFullScreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+            }
+        }
+    </script>
+</head>
+
+<body
+    style="text-align: center; display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100vh;">
+
+    <h1>Welcome to PathToExpert Video Series</h1>
+    <h1>Day 13 - Browser API - FullScreen API</h1>
+
+    <button id="pipButton" onclick="toggleFullScreen();" class="btn btn-lg btn-primary hidden">
+        Toggle Full Screen
+    </button>
+</body>
+
+</html>
