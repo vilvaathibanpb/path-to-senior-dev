@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <script>
+        async function copy () {
+            try {
+                await navigator.clipboard.writeText("You can copy me")
+                console.log("Copy successful")
+            }catch(e) {
+                console.log(e)
+            }
+        }
+
+     async function paste () {
+            try {
+                const text = await navigator.clipboard.readText()
+                const textarea1 = document.getElementById("ta1");
+                textarea1.innerHTML = text;
+                console.log("Paste successful")
+            }catch(e) {
+                console.log(e)
+            }
+        }
+    </script>
+</head>
+
+<body
+    style="text-align: center; display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100vh;">
+    <h1>Welcome to PathToExpert Video Series</h1>
+    <h1>Day 15 - Browser API - Clipboard API</h1>
+    <p><b>Text to copy:</b> You can copy me </p>
+    <button id="pipButton" onclick="copy();" class="btn btn-lg btn-primary hidden">
+        Copy
+    </button>
+    <br />
+    <button id="pipButton" onclick="paste();" class="btn btn-lg btn-primary hidden">
+        Paste
+    </button>
+    <br /><br />
+    <textarea id="ta1" placeholder="Text will be pasted here"></textarea>
+</body>
+
+</html>
