@@ -1,0 +1,19 @@
+/* CSS used here will be applied after bootstrap.css */
+.wave {
+	display: inline-block;
+	border: 10px solid transparent;
+	border-top-color: currentColor;
+	border-radius: 50%;
+	border-style: solid;
+	margin: 5px;
+}
+  
+  
+.waveStrength-3 .wv4.wave,
+.waveStrength-2 .wv4.wave,
+.waveStrength-2 .wv3.wave,
+.waveStrength-1 .wv4.wave,
+.waveStrength-1 .wv3.wave,
+.waveStrength-1 .wv2.wave {
+	border-top-color: #eee;
+}  

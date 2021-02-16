@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./style.css" />
+    <script>
+        const conn = navigator.connection || navigator.webkitConnection
+
+        const updateStrength = () => {
+            const wave = document.getElementById('wave');
+            let className = '';
+            switch (conn.effectiveType) {
+                case '4g': className = 'waveStrength-4'; break;
+                case '3g': className = 'waveStrength-3'; break;
+                case '2g': className = 'waveStrength-2'; break;
+                default: className = 'waveStrength-1'; break;
+            }
+            wave.classList = className
+        }
+        conn.addEventListener('change', updateStrength);
+
+
+
+    </script>
+</head>
+
+<body
+    style="text-align: center; display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100vh;">
+
+    <h1>Welcome to PathToExpert Video Series</h1>
+    <h1>Day 20 - Browser API - Network Information API</h1>
+    <br />
+
+    <div class="waveStrength-4" id="wave">
+        <div class="wv4 wave" style="">
+            <div class="wv3 wave" style="">
+                <div class="wv2 wave" style="">
+                    <div class="wv1 wave">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

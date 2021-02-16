@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <script>
+
+        const updatePosition = (position) => {
+            console.log(position)
+            const data = `Lat: ${position.coords.latitude} & Lng: ${position.coords.longitude}`
+            const p = document.getElementById("location");
+            p.innerHTML = data;
+        }
+
+        function getLoc () {
+            navigator.geolocation.getCurrentPosition(updatePosition, (e) => console.log(e))
+        }
+
+        navigator.geolocation.watchPosition(updatePosition)
+
+    </script>
+</head>
+
+<body
+    style="text-align: center; display: flex; justify-content: center; align-items: center; flex-direction: column; height: 100vh;">
+
+    <h1>Welcome to PathToExpert Video Series</h1>
+    <h1>Day 19 - Browser API - Geolocation API</h1>
+
+    <button id="pipButton" onclick="getLoc();" class="btn btn-lg btn-primary hidden">
+        Get My location
+    </button>
+
+    <br /><br />
+    <p id="location"></p>
+</body>
+
+</html>
